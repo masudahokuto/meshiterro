@@ -1,3 +1,3 @@
 class PostImage < ApplicationRecord
-   has_one_attached :image
+   has_one_attached :imagegit branch
 end
