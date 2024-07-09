@@ -4,7 +4,7 @@
   <%= link_to post_image_path(post_image.id) do %>
     <%= image_tag post_image.get_image %>
   <% end %>
-  
+
   <p>投稿ユーザー画像：<%= image_tag post_image.user.get_profile_image(100,100) %></p>
   <p>ショップ名：<%= post_image.shop_name %></p>
   <p>説明：<%= post_image.caption %></p>
@@ -12,3 +12,4 @@
   <p><%= link_to "#{post_image.post_comments.count} コメント", post_image_path(post_image.id) %></p>
 </div>
 <% end %>
+<%= paginate post_images %>
